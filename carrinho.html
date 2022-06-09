@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrinho</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style02.css">
+	<link rel="stylesheet" href="style03.css">
+
+</head>
+<style>
+	#header {
+		width: 200px;
+		height: 180px;
+	}
+</style>
+
+<body>
+
+	<div class="row justify-content-center">
+		<picture id="centro" style="margin-top: 10px;">
+			<a href="cartaz.html">
+				<img src="Logo-locadora.png" alt="img-fluid" id="header">
+			</a>
+		</picture>
+	</div> 
+
+	<nav style="text-align: center; margin-top: 15px;">
+		<button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+			<a style="text-decoration: 0px; color: black;" href="carrinho.html">Carrinho de compras</a>
+		</button>
+		
+		<button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+			<a style="text-decoration: 0px; color: black;" href="cep.html">Verificar Cep</a>
+		</button>
+
+		<button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+			<a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="Fale.html">Fale Conosco</a>
+		</button>
+	</nav>
+
+	<div class="container shadow">
+		<div id="itens"> </div>
+		<div>Total: <span id="total"></span> </div>
+
+		<button type="button" class="btn btn-outline-danger" onclick=" localStorage.clear(); location.reload();"> Limpar
+		carrinho </button>
+		<br><br>
+
+	</div>
+	<div>
+		<button onclick="pegarValor()" name="bt" id="bt" style="margin-left: 70px;"  class="btn btn-outline-secondary">
+		<a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="FormaPagamento.html">Forma De Pagamento</a>
+		</button>
+	</div>
+	<!------------------------------------->
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

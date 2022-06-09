@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Filmes</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.5.2/dist/css/glide.theme.min.css">
+    <!-- ---------------------------- -->
+    <script src="script.js"></script>
+    <script src="Login.js"></script>
+    <script src="Script02.js"></script>
+    <script src="Java1.js"></script>
+</head>
+<style>
+    #header {
+        width: 200px;
+		height: 180px;
+    }
+</style>
+
+<body onload="rj(),timer()">
+   
+    <h2 style="color: azure; text-align: center; margin-top: 10px;">Tempo do Site:</h2>
+    <div id="timer" style="color:azure; font-size: 40px; text-align: center;"></div>
+    
+
+        <div class="row-1 justify-content-end">
+            <input disabled type="text" class="form-control m-5" id="maria" style="width: 320px;">
+        </div>
+
+    <!----------------------------------------->
+    <div class="row justify-content-center">
+        <picture id="centro">
+            <img src="Logo-locadora.png" alt="img-fluid" id="header">
+        </picture>
+    </div>
+<!-- ----------------------- -->
+    <nav style="text-align: center; margin-top: 15px;">
+       
+        <button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+            <a style="text-decoration: 0px; color: black;" href="carrinho.html">Carrinho de compras</a>
+        </button>
+        
+        <button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+            <a style="text-decoration: 0px; color: black;" href="cep.html">Verificar Cep</a>
+        </button>
+
+        <button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+            <a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="Fale.html">Fale Conosco</a>
+        </button>
+    </nav>
+
+<!----------------------------->
+    <div class="container">
+        <h2 style="text-align: center;"><strong>Destaques</strong></h2>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="Beber_naocase.png" alt=""></li>
+                    <li class="glide__slide"><img src="Stranger_Things.png" alt=""></li>
+                    <li class="glide__slide"><img src="Doctor Strange_(Madness).png" alt=""></li>
+                    <li class="glide__slide"><img src="WandaVision.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script>
+        const config = {
+            type: "carousel",
+            perView: 4
+        };
+        new Glide('.glide', config).mount()
+    </script>
+    <!-- ___________________________________________________ -->
+
+
+    <div class="container-fluid mt-4" style="margin-left: 1px;" id="centro">
+        <div class="row justify-content-center">
+            <div class="col-11 offset md-5">
+                <div class="shadow p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <div class="align-items-start">
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5>Doctor Strange</h5>
+                                    <picture>
+                                        <a href="Img1.html">
+                                            <img src="Doctor Strange_(Madness).png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+                                </div>
+                                <div class="col-3">
+                                    <h5>WandaVision</h5>
+                                    <picture>
+                                        <a href="Img2.html">
+                                            <img src="WandaVision.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                                <div class="col-3">
+                                    <h5>Stranger Things</h5>
+                                    <picture>
+                                        <a href="Img3.html">
+                                            <img src="Stranger_Things.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                                <div class="col-3">
+                                    <h5>Se beber...</h5>
+                                    <picture>
+                                        <a href="Img4.html">
+                                            <img src="Beber_naocase.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="javaTimer.js"></script>
+
+</html>

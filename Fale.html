@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+</head>
+<style>
+    #header {
+        width: 200px;
+        height: 180px;
+    }
+</style>
+
+<body>
+
+    <div class="row justify-content-center">
+        <picture id="centro" style="margin-top: 10px;">
+            <a href="cartaz.html">
+                <img src="Logo-locadora.png" alt="img-fluid" id="header">
+            </a>
+        </picture>
+    </div>
+
+    <nav style="text-align: center; margin-top: 15px;">
+        <button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+            <a style="text-decoration: 0px; color: black;" href="carrinho.html">Carrinho de compras</a>
+        </button>
+
+        <button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+            <a style="text-decoration: 0px; color: black;" href="cep.html">Verificar Cep</a>
+        </button>
+
+        <button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+            <a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="Fale.html">Fale
+                Conosco</a>
+        </button>
+    </nav>
+
+    <div class="container col-6">
+        <div class="row justify-content-center">
+            <div style="background-color: gray !important;" class="col-10 shadow-sm p-3 mt-5 bg-body m-3 align-content-center">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <h3 style="text-align:center ;">Fale Conosco</h3>
+                    <input type="hidden" name="accessKey" value="9e0228ff-18c5-4cef-b3ab-5ade53696995">
+                    <!-- Required -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="name"
+                            placeholder="Seu nome: ">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="E-mail: ">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message"
+                            rows="10"></textarea>
+                    </div>
+
+                    <div class="mb-3" style="text-align: center;">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>
